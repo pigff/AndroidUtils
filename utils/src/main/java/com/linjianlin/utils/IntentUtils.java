@@ -18,8 +18,9 @@ import java.io.File;
  *     time  : 2016/9/23
  *     desc  : 意图相关工具类
  * function  : 1.获取安装、卸载、打开App意图；2.获取分享文本、图片的意图; 3.获取打开应用具体的意图(？)
+ *             getInstallAppIntent、getUninstallAppIntent、getLaunchAppIntent、getShareTextIntent、getShareImageIntent、getAppDetailsSettingsIntent
  *             4.获取其他应用组件的意图(? 感觉起码可以用来打开其他的activity)；5. 关机、打电话、拨号界面、短信界面意图、拍照
- *
+ *             getComponentIntent、getShutdownIntent、getCallIntent、getDialIntent、getSendSmsIntent、getCaptureIntent
  * </pre>
  */
 public final class IntentUtils {

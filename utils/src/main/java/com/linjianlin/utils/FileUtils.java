@@ -33,18 +33,20 @@ import java.util.List;
  *     blog  : http://blankj.com
  *     time  : 2016/8/11
  *     desc  : 文件相关工具类
- *  function : 1.根据路径获取文件；2.判断文件是否存在、不存在则创建新的文件，返回是否创建成功、or 存在则删除旧文件，返回是否删除失败；3.给文件重命名；
- *             4.判断是否是目录、如果目录不存在则创建新目录，返回是否创建成功；
- *             5.复制或移动目录、文件。 根据一个布尔值来判断是复制还是移动(即删除旧的文件或目录)
- *             6.删除目录、删除文件、删除目录下的所有文件
- *             7.获取目录下的所有文件、 获取文件下的所有文件(包括子目录)
- *             8.获取目录下所有后缀名为suffix的文件包括子目录、获取目录下所有后缀名为suffix的文件
- *             9.获取目录下所有符合filter的文件包括子目录、获取目录下所有符合filter的文件
+ *  function : 1.根据路径获取文件getFileByPath；2.判断文件是否存在isFileExists、不存在则创建新的文件，返回是否创建成功createOrExistsFile、or 存在则删除旧文件，返回是否删除失败createFileByDeleteOldFile；
+ *             3.给文件重命名rename；
+ *             4.判断是否是目录、如果目录不存在则创建新目录，返回是否创建成功createOrExistsDir；
+ *             5.复制或移动目录、文件copyDir、copyFile、moveDir、moveFile。 根据一个布尔值来判断是复制还是移动(即删除旧的文件或目录)
+ *             6.删除目录、删除文件、删除目录下的所有文件 deleteDir、deleteFile
+ *             7.获取目录下的所有文件、 获取文件下的所有文件(包括子目录) listFilesInDir
+ *             8.获取目录下所有后缀名为suffix的文件包括子目录、获取目录下所有后缀名为suffix的文件  searchFileInDir
+ *             9.获取目录下所有符合filter的文件包括子目录、获取目录下所有符合filter的文件 listFilesInDirWithFilter
  *             10.获取目录下指定文件名的文件包括子目录
  *             11.将输入流、字符串写入文件
- *             12.指定编码按行读取文件到链表中、读取文件到字符数组中
+ *             12.指定编码按行读取文件到链表中、读取文件到字符数组中 readFile2List  readFile2String  readFile2Bytes
  *             13.获取文件最后修改的毫秒时间戳、简单获取文件编码格式、获取文件行数、获取目录大小、获取文件大小、获取目录长度、获取文件长度、获取文件的MD5校验码、
- *             获取全路径中的不带拓展名的文件名、获取全路径中的文件名、获取全路径中的文件拓展名
+ *             获取全路径中的不带拓展名的文件名、获取全路径中的文件名、获取全路径中的文件拓展名 getFileLastModified、getFileCharsetSimple、getFileLines
+ *             getDirSize、getFileSize、getDirLength、getFileLength、getFileMD5、getFileMD5ToString、getDirName、getFileName、getFileNameNoExtension、getFileExtension
  *
  * </pre>
  */
