@@ -22,6 +22,13 @@ import java.lang.reflect.Method;
  *     blog  : http://blankj.com
  *     time  : 2016/9/23
  *     desc  : 栏相关工具类
+ *     funciton : setTransparentStatusBar: 设置透明状态栏（api大于19方可使用）
+                  hideStatusBar          : 隐藏状态栏
+                  getStatusBarHeight     : 获取状态栏高度
+                  isStatusBarExists      : 判断状态栏是否存在
+                  getActionBarHeight     : 获取ActionBar高度
+                  showNotificationBar    : 显示通知栏
+                  hideNotificationBar    : 隐藏通知栏
  * </pre>
  */
 public class BarUtils {
