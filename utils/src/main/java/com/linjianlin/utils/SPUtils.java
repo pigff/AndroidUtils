@@ -13,12 +13,30 @@ import java.util.Set;
  *     blog  : http://blankj.com
  *     time  : 2016/8/2
  *     desc  : SP相关工具类
+ *  function :  SPUtils   : SPUtils构造函数
+                put       : SP中写入数据, String,int,long,float,boolean,set<String>(重载)
+                get       : 得到保存数据的方法，我们根据默认值得到保存的数据的具体类型，然后调用相对于的方法获取值
+                getString : SP中读取String
+                getInt    : SP中读取int
+                getLong   : SP中读取long
+                getFloat  : SP中读取float
+                getBoolean: SP中读取boolean
+             getStringSet : SP中读取set<String>
+                getAll    : SP中获取所有键值对
+                remove    : SP中移除该key
+                contains  : SP中是否存在该key
+                clear     : SP中清除所有数据
+ *
  * </pre>
  */
 public final class SPUtils {
 
     private SharedPreferences sp;
     private SharedPreferences.Editor editor;
+    /**
+     * 保存在手机里面的文件名
+     */
+    public static final String DEFAULT_FILE_NAME = "xxxxxxxxx";
 
     /**
      * SPUtils构造函数
@@ -30,6 +48,33 @@ public final class SPUtils {
         sp = Utils.getContext().getSharedPreferences(spName, Context.MODE_PRIVATE);
         editor = sp.edit();
         editor.apply();
+    }
+
+    public SPUtils() {
+        this(DEFAULT_FILE_NAME);
+    }
+
+
+    /**
+     * 得到保存数据的方法，我们根据默认值得到保存的数据的具体类型，然后调用相对于的方法获取值
+     *
+     * @param key
+     * @param defaultObject
+     * @return
+     */
+    public Object get(String key, Object defaultObject) {
+        if (defaultObject instanceof String) {
+            return getString(key, (String) defaultObject);
+        } else if (defaultObject instanceof Integer) {
+            return getInt(key, (Integer) defaultObject);
+        } else if (defaultObject instanceof Boolean) {
+            return getBoolean(key, (Boolean) defaultObject);
+        } else if (defaultObject instanceof Float) {
+            return getFloat(key, (Float) defaultObject);
+        } else if (defaultObject instanceof Long) {
+            return getLong(key, (Long) defaultObject);
+        }
+        return null;
     }
 
     /**
