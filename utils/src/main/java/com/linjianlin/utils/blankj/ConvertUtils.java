@@ -1,4 +1,4 @@
-package com.linjianlin.utils;
+package com.linjianlin.utils.blankj;
 
 import android.annotation.SuppressLint;
 import android.content.res.Resources;
@@ -10,8 +10,8 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 
-import com.linjianlin.utils.constant.MemoryConstants;
-import com.linjianlin.utils.constant.TimeConstants;
+import com.linjianlin.utils.blankj.constant.MemoryConstants;
+import com.linjianlin.utils.blankj.constant.TimeConstants;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

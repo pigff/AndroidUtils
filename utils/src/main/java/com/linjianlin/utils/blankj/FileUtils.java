@@ -1,8 +1,8 @@
-package com.linjianlin.utils;
+package com.linjianlin.utils.blankj;
 
 import android.annotation.SuppressLint;
 
-import com.linjianlin.utils.constant.MemoryConstants;
+import com.linjianlin.utils.blankj.constant.MemoryConstants;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

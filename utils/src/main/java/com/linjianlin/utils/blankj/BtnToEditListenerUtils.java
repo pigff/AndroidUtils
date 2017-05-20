@@ -1,4 +1,4 @@
-package com.linjianlin.utils;
+package com.linjianlin.utils.blankj;
 
 import android.text.Editable;
 import android.text.TextWatcher;

@@ -1,7 +1,7 @@
-package com.linjianlin.utils;
+package com.linjianlin.utils.blankj;
 
 
-import com.linjianlin.utils.constant.RegexConstants;
+import com.linjianlin.utils.blankj.constant.RegexConstants;
 
 import java.util.ArrayList;
 import java.util.List;

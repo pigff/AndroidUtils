@@ -1,4 +1,4 @@
-package com.linjianlin.utils;
+package com.linjianlin.utils.blankj;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

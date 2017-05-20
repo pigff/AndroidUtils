@@ -1,4 +1,4 @@
-package com.linjianlin.utils;
+package com.linjianlin.utils.blankj;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

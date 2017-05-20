@@ -1,4 +1,4 @@
-package com.linjianlin.utils;
+package com.linjianlin.utils.blankj;
 
 import android.graphics.drawable.Drawable;
 import android.os.Build;

@@ -1,4 +1,4 @@
-package com.linjianlin.utils.constant;
+package com.linjianlin.utils.blankj.constant;
 
 import android.support.annotation.IntDef;
 

@@ -1,8 +1,8 @@
-package com.linjianlin.utils;
+package com.linjianlin.utils.blankj;
 
 import android.annotation.SuppressLint;
 
-import com.linjianlin.utils.constant.TimeConstants;
+import com.linjianlin.utils.blankj.constant.TimeConstants;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
