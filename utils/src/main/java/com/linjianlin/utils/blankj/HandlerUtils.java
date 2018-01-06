@@ -38,4 +38,12 @@ public final class HandlerUtils {
             }
         }
     }
+
+
+    /**
+     * 收到消息回调接口
+     */
+    public interface OnReceiveMessageListener {
+        void handlerMessage(Message msg);
+    }
 }
